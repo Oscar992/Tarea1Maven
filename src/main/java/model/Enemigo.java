@@ -1,4 +1,4 @@
-package classes;
+package model;
 
 import com.github.javafaker.Faker;
 
@@ -43,5 +43,23 @@ public class Enemigo {
 
     public boolean isEsTerrestre() {
         return esTerrestre;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{ID: ");
+        sb.append(id);
+        sb.append("Nombre: ");
+        sb.append(nombre);
+        sb.append("Peso: ");
+        sb.append(peso);
+        sb.append("Ataque: ");
+        sb.append(ataque);
+        sb.append("PuntosExp: ");
+        sb.append(puntosExp);
+        sb.append("esTerrestre: ");
+        sb.append(esTerrestre + "}");
+        return sb.toString();
     }
 }
