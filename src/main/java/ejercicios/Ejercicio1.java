@@ -28,9 +28,12 @@ public class Ejercicio1 {
 
         Logs.info(Arrays.toString(new ArrayList[]{listEnemigos}));
 
+        final var newListEnemigos = new ArrayList<Enemigo>();
+
         for (var i = 0; i < 5; i++) {
-            final var enemigo = mapEnemigos.get(faker.number().numberBetween(1, 150));
-            enemigo.toString();
+            newListEnemigos.add(mapEnemigos.get(faker.number().numberBetween(1, 150)));
         }
+
+        Logs.info(Arrays.toString(new ArrayList[]{newListEnemigos}));
     }
 }
