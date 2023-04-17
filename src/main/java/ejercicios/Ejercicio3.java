@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 import utility.Logs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Ejercicio3 {
     private final Faker faker;
@@ -22,12 +21,11 @@ public class Ejercicio3 {
             listString.add(faker.name().firstName());
         }
 
-        Logs.info(Arrays.toString(new ArrayList[]{listString}));
-
-        bubbleSortAlphabet(listString);
+        //Logs.info(Arrays.toString(new ArrayList[]{listString}));
+        Logs.info(listString.toString());
 
         Logs.info("Ordenados Alfabeticamente");
-        Logs.info(Arrays.toString(new ArrayList[]{listString}));
+        Logs.info(listString.toString());
     }
 
     static void bubbleSortAlphabet(ArrayList<String> listNames) {

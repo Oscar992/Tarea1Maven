@@ -4,7 +4,6 @@ import com.github.javafaker.Faker;
 import utility.Logs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Ejercicio2 {
 
@@ -24,12 +23,12 @@ public class Ejercicio2 {
             listNumbers.add(faker.number().numberBetween(100, 1000));
         }
 
-        Logs.info(Arrays.toString(new ArrayList[]{listNumbers}));
-
+        Logs.info(listNumbers.toString());
+        
         bubbleSort(listNumbers);
 
         Logs.info("Ordenados");
-        Logs.info(Arrays.toString(new ArrayList[]{listNumbers}));
+        Logs.info(listNumbers.toString());
     }
 
     static void bubbleSort(ArrayList<Integer> arr) {

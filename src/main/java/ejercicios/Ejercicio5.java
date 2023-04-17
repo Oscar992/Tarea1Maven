@@ -29,7 +29,6 @@ public class Ejercicio5 {
         bubbleSortAlphabetByEnemyName(listEnemigos);
 
         Logs.info("Ordenados Alfabeticamente");
-
         Logs.info(Arrays.toString(new ArrayList[]{listEnemigos}));
     }
 

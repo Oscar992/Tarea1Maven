@@ -59,7 +59,7 @@ public class Enemigo {
         sb.append("PuntosExp: ");
         sb.append(puntosExp);
         sb.append("esTerrestre: ");
-        sb.append(esTerrestre + "}");
+        sb.append(esTerrestre + "} ");
         return sb.toString();
     }
 }
