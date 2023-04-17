@@ -5,7 +5,6 @@ import model.Enemigo;
 import utility.Logs;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Ejercicio1 {
@@ -26,7 +25,7 @@ public class Ejercicio1 {
             mapEnemigos.put(i + 1, new Enemigo(i + 1));
         }
 
-        Logs.info(Arrays.toString(new ArrayList[]{listEnemigos}));
+        Logs.info(listEnemigos.toString());
 
         final var newListEnemigos = new ArrayList<Enemigo>();
 
@@ -34,6 +33,6 @@ public class Ejercicio1 {
             newListEnemigos.add(mapEnemigos.get(faker.number().numberBetween(1, 150)));
         }
 
-        Logs.info(Arrays.toString(new ArrayList[]{newListEnemigos}));
+        Logs.info(newListEnemigos.toString());
     }
 }
